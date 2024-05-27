@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ecced2;
+    background-image: url(images/backgroundimage3.jpg);
+}
+
+.tamagotchi {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mijnGif {
+  
+    width: 150px;
+    height: 150px;
+    background-color: #FFF0F5;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.stuiter {
+    animation: stuiter 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  #mijnGif {
+  animation: bounce 2s infinite;
+}
+
+
+#ogen {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+#ogen::before, #ogen::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#ogen::before {
+    top: 30%;
+    left: 30%;
+}
+
+#ogen::after {
+    top: 30%;
+    right: 30%;
+}
+
+#mond {
+    width: 60px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+}
+
+#weergave {
+    margin-top: 20px;
+}
+
+#naam {
+    font-size: 24px;
+}
+
+#status {
+    font-size: 18px;
+}
+
+#acties {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FAB8C2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFE6AC
+    ;
+}
+
+
+#mijnGif {
+    margin: 10px;
+    padding-top: 10px;
+    border: 1px solid black;
+    width: 170px;
+    text-align: center;
+    background-color: #FFE6AC;
+}
+
+#inputNaam {
+    background-color: #ffffff;
+}

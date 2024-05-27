@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="tamagotchi">
+        <div id="huisdier" class="stuiter"></div>
+        <div id="weergave">
+            <h2 id="naam">Ti</h2>
+            <p id="status"></p>
+        </div>
+        <div id="acties">
+            <button id="voer">Voer</button>
+            <button id="speel">Speel</button>
+            <button id="schoon">Maak schoon</button>
+        </div>
+        
+        <img id="mijnGif" src="gifs/giphypet2.gif" alt="Leuke GIF">
+
+        
+        <div id="creëerHuisdier">
+            Voer de naam van je huisdier in
+            <form>
+                <input id="inputNaam" type="text" placeholder="Naam">
+            </form>
+          <button id="Tamagotchi" type="submit" onclick="creëerHuisdier()">Tamagotchi aanmaken</button>
+          </div>
+    </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
